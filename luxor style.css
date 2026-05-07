@@ -1,0 +1,292 @@
+/* ================= start luxor hero ================= */
+.luxor-hero {
+    background-image: url("images/Luxor.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.luxor-hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.luxor-hero-content {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.luxor-hero-content h1 {
+    color: white;
+    font-size: 65px;
+    margin: 16px 0 20px;
+    line-height: 1.1;
+}
+
+.luxor-hero-content p {
+    color: #ccc;
+    font-size: 22px;
+    margin-bottom: 36px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.luxor-btns {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.luxor-btn-primary {
+    padding: 13px 30px;
+    background: #D87A2D;
+    color: white;
+    border: 2px solid #D87A2D;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.luxor-btn-primary:hover {
+    background: transparent;
+    color: #D87A2D;
+}
+
+.luxor-btn-secondary {
+    padding: 13px 30px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.luxor-btn-secondary:hover {
+    background: white;
+    color: #111;
+}
+/* ================= end luxor hero ================= */
+
+
+/* ================= start luxor intro ================= */
+.luxor-intro {
+    background: #0f0f0f;
+    padding: 100px 0;
+}
+
+.luxor-wrap {
+    width: 85%;
+    margin: auto;
+}
+
+.luxor-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.luxor-intro-text h2 {
+    font-size: 42px;
+    color: white;
+    margin: 0 0 24px;
+    line-height: 1.2;
+}
+
+.luxor-intro-text h2 em {
+    color: #D87A2D;
+    font-style: normal;
+}
+
+.luxor-intro-text p {
+    color: #999;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.luxor-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: #222;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #222;
+}
+
+.luxor-stat-box {
+    background: #161616;
+    padding: 30px 20px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.luxor-stat-box:hover { background: #1c1c1c; }
+
+.luxor-stat-num {
+    font-size: 42px;
+    color: #D87A2D;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.luxor-stat-line {
+    width: 40px;
+    height: 3px;
+    background: #D87A2D;
+    border-radius: 2px;
+    margin: 6px auto 10px;
+}
+
+.luxor-stat-label {
+    color: #777;
+    font-size: 13px;
+}
+/* ================= end luxor intro ================= */
+
+
+/* ================= start luxor sections ================= */
+.luxor-section {
+    padding: 100px 0;
+    background: #111;
+}
+
+.luxor-dark-section {
+    padding: 100px 0;
+    background: #0a0a0a;
+}
+
+.luxor-section-head {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.luxor-section-head h2 {
+    font-size: 42px;
+    color: white;
+    margin: 0 0 12px;
+}
+
+.luxor-section-head p {
+    color: #888;
+    font-size: 16px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.luxor-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.luxor-card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 30px;
+    transition: border-color 0.3s;
+}
+
+.luxor-card:hover { border-color: #D87A2D; }
+
+.luxor-dark-card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 30px;
+    transition: border-color 0.3s;
+}
+
+.luxor-dark-card:hover { border-color: #D87A2D; }
+
+.luxor-card-icon {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.luxor-card h3 {
+    color: #D87A2D;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.luxor-dark-card h3 {
+    color: #D87A2D;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.luxor-card p,
+.luxor-dark-card p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.8;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+/* ================= end luxor sections ================= */
+
+
+/* ================= start visit info ================= */
+.luxor-visit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.luxor-visit-box {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 14px;
+    padding: 30px;
+    transition: border-color 0.3s;
+}
+
+.luxor-visit-box:hover { border-color: #D87A2D; }
+
+.luxor-visit-icon {
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.luxor-visit-box h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.luxor-visit-box ul {
+    padding-left: 18px;
+}
+
+.luxor-visit-box li {
+    color: #999;
+    font-size: 14px;
+    line-height: 1.9;
+}
+/* ================= end visit info ================= */

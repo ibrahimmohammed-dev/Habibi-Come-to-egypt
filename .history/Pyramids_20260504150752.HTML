@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pyramids in Egypt</title>
+    <link rel="stylesheet" href="pyramids style.Css">
+</head>
+<body>
+
+<!-- ================= start navbar ================= -->
+<nav class="navbar">
+  <div class="container">
+    <div class="inner-navbar">
+
+      <!-- تعديل: اللوجو بيرجع لـ index.html -->
+      <a href="index.html" class="logo">
+        <img src="images/logo-search-grid-2x.PNG" alt="Egypt">
+        <span>Habibi, Come to Egypt</span>
+      </a>
+
+      <!-- تعديل: الـ links بتودي لـ index.html -->
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About Egypt</a></li>
+        <li><a href="index.html#location">Places</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!-- ================= end navbar ================= -->
+
+<section id="home" class="home">
+    <div class="home-content">
+        <h1>The Great Pyramids</h1>
+        <h3>One of the Seven Wonders of the World</h3>
+        <p>The Pyramids of Giza are among the most important historical landmarks in the world, representing ancient Egyptian civilization, outstanding engineering skills, rich cultural heritage, enduring mysteries, and humanity's power to create lasting monuments for generations.</p>
+        <div class="btn-box">
+            <a href="#Photo">Photos</a>
+            <a href="#information">Information</a>
+        </div>
+    </div>
+</section>
+
+<div>
+    <div class="info">
+        <div class="row">
+            <div class="about-1">
+                <img src="images/ffdfdf.jpg" alt="" id="information">
+            </div>
+            <div class="about-2">
+                <h1 class="Sub-title">Information about the Pyramids</h1>
+                <p class="AA">The Pyramids of Giza are among the most famous ancient monuments in the world and are located near Cairo, Egypt. They were built more than 4,500 years ago as tombs for the pharaohs of the Old Kingdom, especially the Great Pyramid of Khufu, which is the largest one. The pyramids were constructed using huge stone blocks and show the high level of engineering and organization achieved by ancient Egyptians. The Great Pyramid is the only remaining wonder of the Seven Wonders of the Ancient World.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('great')">The Great Pyramid</p>
+                    <p class="tab-links" onclick="opentab('middle')">The Middle Pyramid</p>
+                    <p class="tab-links" onclick="opentab('small')">The Smallest Pyramid</p>
+                </div>
+                <div class="tab-contents active-tab" id="great">
+                    <ul>
+                        <li><span>King</span><br>Khufu (Cheops)</li>
+                        <li><span>History</span><br>Ruled Egypt from about 2589 BC to 2566 BC</li>
+                        <li><span>Dynasty</span><br>Fourth Dynasty of the Old Kingdom</li>
+                        <li><span>Info</span><br>Khufu is best known for building the Great Pyramid of Giza, the largest pyramid in Egypt.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="middle">
+                    <ul>
+                        <li><span>King</span><br>Khafre (Khephren)</li>
+                        <li><span>History</span><br>Ruled Egypt from about 2558 BC to 2532 BC</li>
+                        <li><span>Dynasty</span><br>Fourth Dynasty of the Old Kingdom</li>
+                        <li><span>Info</span><br>Appears taller than the Great Pyramid because it stands on higher ground.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="small">
+                    <ul>
+                        <li><span>King</span><br>Menkaure (Mycerinus)</li>
+                        <li><span>History</span><br>Ruled Egypt from about 2532 BC to 2503 BC</li>
+                        <li><span>Dynasty</span><br>Fourth Dynasty of the Old Kingdom</li>
+                        <li><span>Info</span><br>Smallest of the three pyramids, known for fine construction and statues found inside.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container">
+        <h1 class="Sub-title" id="Photo">Photos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/adrian-dascal-27a_s3DdbVc-unsplash.jpg" alt="pyramid">
+                <div class="layer">
+                    <h3>The Great Pyramid</h3>
+                    <p>Built using massive limestone blocks with remarkable precision.</p>
+                    <a href="https://www.pyramid-of-giza.com"><img class="icon" src="Screenshot 2026-05-02 112634.png" alt="link"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/jorge-garcia-sK7hAIoU1WI-unsplash.jpg" alt="pyramid">
+                <div class="layer">
+                    <h3>The Middle Pyramid</h3>
+                    <p>Built for Pharaoh Khafre, still has original limestone casing at the top.</p>
+                    <a href="https://egyptmythology.com/the-pyramids-of-the-middle-kingdom-a-shift-in-design/"><img class="icon" src="Screenshot 2026-05-02 112634.png" alt="link"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/premium_photo-1694475632941-05ff7486f8c7.avif" alt="pyramid">
+                <div class="layer">
+                    <h3>The Smallest Pyramid</h3>
+                    <p>Built for Pharaoh Menkaure, notable for high-quality granite construction.</p>
+                    <a href="https://www.memphistours.com/egypt/pyramid-of-mykerinus"><img class="icon" src="Screenshot 2026-05-02 112634.png" alt="link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- تعديل: زرار scroll to top -->
+<button id="scrollBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+/* تعديل: scroll to top button */
+window.onscroll = function() {
+    var btn = document.getElementById('scrollBtn');
+    if (document.documentElement.scrollTop > 300) {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+};
+</script>
+</body>
+</html>

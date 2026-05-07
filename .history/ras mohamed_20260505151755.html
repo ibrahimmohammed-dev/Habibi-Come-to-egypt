@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ras Mohammed National Park</title>
+  <link rel="stylesheet" href="ras m style.css"/>
+</head>
+<body>
+
+<!-- ================= start navbar ================= -->
+<nav class="navbar">
+  <div class="container">
+    <div class="inner-navbar">
+
+      <!-- تعديل: اللوجو بيرجع لـ index.html -->
+      <a href="index.html" class="logo">
+        <img src="images/logo-search-grid-2x.PNG" alt="Egypt">
+        <span>Habibi, Come to Egypt</span>
+      </a>
+
+      <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About Egypt</a></li>
+        <li><a href="index.html#location">Places</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<!-- ================= end navbar ================= -->
+
+  <header>
+    <h1>Ras Mohammed National Park</h1>
+    <p>One of Egypt's most beautiful natural treasures, located at the southern tip of Sinai.</p>
+  </header>
+
+  <section id="about">
+    <h2>About the Park</h2>
+    <p>
+      Ras Mohammed National Park is located at the southernmost tip of the Sinai Peninsula,
+      where the Gulf of Suez and the Gulf of Aqaba meet. It was established in 1983 and was
+      the first national park in Egypt.
+    </p>
+    <p>
+      The park covers around 480 km² of both land and sea. It is known for its stunning coral
+      reefs, clear blue water, and rich wildlife. The name "Ras Mohammed" means "Head of Mohammed"
+      in Arabic and refers to the rocky headland at the park's tip.
+    </p>
+
+    <div class="photos">
+      <img src="images/Screenshot 2026-04-30 172658.png"/>
+      <img src="images/Screenshot 2026-04-30 172836.png"/>
+      <img src="images/Screenshot 2026-04-30 174525.png" alt="Ras Mohammed" />
+      <img src="images/s.png" alt="Ras Mohammed Cliff" />
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <h3>480 km²</h3>
+        <p>Total Area</p>
+      </div>
+      <div class="stat">
+        <h3>1983</h3>
+        <p>Year Established</p>
+      </div>
+      <div class="stat">
+        <h3>1000+</h3>
+        <p>Marine Species</p>
+      </div>
+      <div class="stat">
+        <h3>250+</h3>
+        <p>Bird Species</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="marine" class="dark-section">
+    <h2>Marine Life</h2>
+    <p>The park is home to some of the most diverse marine ecosystems in the world. Its coral reefs are among the healthiest in the Red Sea.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>🪸 Coral Reefs</h3>
+        <p>Over 220 species of coral can be found in the park, some of them hundreds of years old.</p>
+      </div>
+      <div class="card">
+        <h3>🐠 Tropical Fish</h3>
+        <p>More than 1,000 species of fish live in these waters, including clownfish, parrotfish, and barracuda.</p>
+      </div>
+      <div class="card">
+        <h3>🦈 Sharks & Rays</h3>
+        <p>The park is famous for shark diving. Shark Reef is one of the top dive sites in the Red Sea.</p>
+      </div>
+      <div class="card">
+        <h3>🐢 Sea Turtles</h3>
+        <p>Green and hawksbill turtles nest on the beaches and feed along the reefs inside the park.</p>
+      </div>
+      <div class="card">
+        <h3>🌿 Mangroves</h3>
+        <p>Rare mangrove forests grow along the coast and serve as an important habitat for many species.</p>
+      </div>
+      <div class="card">
+        <h3>🦅 Birds</h3>
+        <p>Millions of migratory birds pass through the park each year on their way between Africa and Europe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <h2>How to Visit</h2>
+    <div class="visit-grid">
+      <div class="visit-box">
+        <h3>Getting There</h3>
+        <ul>
+          <li>Located 12 km south of Sharm El-Sheikh</li>
+          <li>Accessible by car or taxi (about 20 minutes)</li>
+          <li>Boat trips available from Sharm marina</li>
+        </ul>
+      </div>
+      <div class="visit-box">
+        <h3>Best Time to Visit</h3>
+        <ul>
+          <li>Open all year round</li>
+          <li>Best diving: March to November</li>
+          <li>Winter is good for birdwatching and hiking</li>
+        </ul>
+      </div>
+      <div class="visit-box">
+        <h3>Important Info</h3>
+        <ul>
+          <li>Entry fee is required</li>
+          <li>Bring your passport or ID</li>
+          <li>Do not touch or feed the marine life</li>
+          <li>Park hours: 8:00 AM – 5:00 PM</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Ras Mohammed National Park — South Sinai, Egypt</p>
+  </footer>
+
+<button id="scrollBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+<script>
+/* scroll to top button */
+window.onscroll = function() {
+    var btn = document.getElementById('scrollBtn');
+    if (document.documentElement.scrollTop > 300) {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+};
+</script>
+</body>
+</html>

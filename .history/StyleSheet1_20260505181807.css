@@ -1,0 +1,437 @@
+﻿/* =========================================================
+   ملف تنسيق المتاحف المصرية - الوضع الداكن (StyleSheet1.css)
+   ========================================================= */
+
+/* إعادة تعيين الأساسيات والخطوط */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* خلفية داكنة مريحة للعين */
+    color: #E0E0E0; /* لون النص الفاتح للقراءة */
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* ================= start museum navigation ================= */
+.museum-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 24px 20px;
+  background: #1E1E24;
+  border-bottom: 1px solid #2C2C35;
+  position: sticky;
+  top: 60px;
+  z-index: 998;
+}
+
+.museum-nav a {
+  color: #D4AF37;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 20px;
+  border: 1.5px solid #D4AF37;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.museum-nav a:hover {
+  background: #D4AF37;
+  color: #121212;
+  text-decoration: none;
+}
+/* ================= end museum navigation ================= */
+
+/* ================= start navbar ================= */
+.navbar{
+  position: fixed;
+  width: 87%;
+  top: 0;
+  z-index: 999;
+
+  background: rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+
+  padding: 10px 0;
+}
+
+.inner-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.logo img{
+  width: 80px;
+}
+
+.logo span{
+  color: white;
+  font-weight: bold;
+}
+#logoss{
+    margin-left: 0%;
+}
+.navlist{
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navlist a{
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+}
+
+.navlist a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #D87A2D;
+  transition: 0.3s;
+}
+
+.navlist a:hover{
+  color: #D87A2D;
+}
+
+.navlist a:hover::after{
+  width: 100%;
+}
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #D87A2D;
+  color: white;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 999;
+}
+#scrollBtn:hover { background: #c06820; }
+/* ================= end navbar ================= */
+
+
+
+/* -----------------------------------------------------
+   القسم الأول (القائمة - Menu)
+   ----------------------------------------------------- */
+.menu {
+    text-align: center; /* توسيط كل النصوص داخل القسم */
+    padding: 60px 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    margin-top: 55px;
+    background-color: #1E1E24;
+    /* مكان لصورة الخلفية لقسم الـ Menu */
+    background-image: linear-gradient(rgba(30, 30, 36, 0.85), rgba(30, 30, 36, 0.85)), url('images/menu-background.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+    border: 1px solid #2C2C35;
+}
+
+    .menu h1.big_head {
+        color: #D4AF37;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .menu h2 {
+        color: #E6C687;
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .menu ul {
+        list-style: none;
+        color: #E0E0E0;
+        font-size: 1.1rem;
+    }
+
+        .menu ul ul {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #D4AF37;
+        }
+
+        .menu ul li {
+            margin-bottom: 8px;
+        }
+
+/* -----------------------------------------------------
+   العناوين الرئيسية (H1) - تم ضبط التوسيط والأبعاد
+   ----------------------------------------------------- */
+h1.big_head{
+    font-size: 60rem;
+    color: #ffcc00;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 75vh;
+    /* ---- التعديل السحري هنا لتوسيط النص تماماً ---- */
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center; /* توسيط عمودي */
+    /* قم بإزالة الـ padding-bottom القديم */
+    padding: 20px; /* إضافة padding بسيط بدلاً منه */
+
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+h1.the-grand-head,
+h1.the-head,
+h1.the-National,
+h1.the_nubian {
+    font-size: 4rem;
+    color: #ffcc00;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    min-height: 75vh;
+    /* ---- التعديل السحري هنا لتوسيط النص تماماً ---- */
+    display: flex;
+    justify-content: center; /* توسيط أفقي */
+    align-items: center; /* توسيط عمودي */
+    /* قم بإزالة الـ padding-bottom القديم */
+    padding: 20px; /* إضافة padding بسيط بدلاً منه */
+
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* تخصيص الصور الخلفية لكل عنوان */
+h1.big_head{
+       background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("images/museums.png");
+}
+h1.the-grand-head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("images/Grand Egyptian Museum/main-photo.jpg");
+}
+
+h1.the-head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("images/2.jpg");
+}
+
+h1.the-National {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("images/National Museum of Egyptian Civilization/3.jpg");
+}
+
+h1.the_nubian {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("/images/Nubian Museum/2.webp");
+}
+
+/* -----------------------------------------------------
+   باقي التنسيقات (البطاقات، النصوص، الصور)
+   ----------------------------------------------------- */
+
+/* العناوين الفرعية */
+h2 {
+    color: #E6C687; /* لون ذهبي دافئ متوسط */
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+h3 {
+    color: #E0E0E0;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+/* البطاقات / الأقسام */
+div.about-grand,
+div.the_egypt,
+div.the-national,
+div.the_Nubian,
+div.Tutankhamun,
+div.Ramses,
+div.The_boot,
+div.Egyptian_gods,
+div.Mummies,
+div.Amenhotep,
+div.Narmer,
+div.Mentuhotep,
+div.dwarf_Seneb,
+div.WaterClock,
+div.Prosthetic_Toe,
+div.Coffin_Sennedj,
+div.Tent_of_Princess,
+div.Chariot_of_Thutmose,
+div.diorama,
+div.King_Ramses,
+div.King_taharqa {
+    background-color: #1E1E24; /* لون خلفية البطاقة */
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2C2C35;
+}
+
+/* تنسيق خاص لاسم تابوت كاويت (بسبب المسافة في الـ class) */
+div[class="Kaweit's coffin"] {
+    background-color: #1E1E24;
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #2C2C35;
+}
+
+/* أقسام المميزات */
+div.most_important1,
+div.most_important2,
+div.most_important3,
+div.most_important4 {
+    background-color: #1A1C1A;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    border-left: 5px solid #D4AF37;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+    div.most_important1 p,
+    div.most_important2 p,
+    div.most_important3 p,
+    div.most_important4 p {
+        margin-bottom: 8px;
+        color: #CCCCCC;
+    }
+
+/* أقسام الاقتباسات والأعمال المميزة */
+div.remarkable_artifacts1,
+div.remarkable_artifacts2,
+div.remarkable_artifacts3,
+div.remarkable_artifacts4 {
+    background-color: #18181A;
+    padding: 25px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    border-right: 5px solid #E6C687;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* الروابط */
+a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+    a:hover {
+        color: #FFE5A3;
+        text-decoration: underline;
+    }
+
+/* الخرائط (Iframe) */
+iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+/* الصور (تم توسيطها) */
+img {
+    display: block;
+    max-width: 75%;
+    height: auto;
+    border-radius: 6px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+    img:hover {
+        transform: scale(1.02);
+    }
+
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    h1.the-grand-head,
+    h1.the-head,
+    h1.the-National,
+    h1.the_nubian {
+        font-size: 2.2rem; /* تصغير حجم النص ليلائم أجهزة الجوال */
+        min-height: 50vh;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    iframe {
+        height: 250px;
+    }
+}
+.museum-divider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.museum-divider::before,
+.museum-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #0a9396, transparent);
+}
+
+.museum-divider span {
+  color: #796c0d;
+  font-size: 22px;
+  letter-spacing: px;
+  flex-shrink: 0;
+}
